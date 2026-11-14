@@ -1,5 +1,5 @@
-import parthmittal from "./parth.svg";
-import profilePic from "./profile-pic.jpg";
+import ssLogo from "./ss-logo.svg";
+import profilePic from "./siddharth-avatar.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
@@ -53,7 +53,7 @@ export {
   genesis,
   portfolio,
   cdc,
-  parthmittal,
+  ssLogo,
   profilePic,
   chargeswap,
   placeicon,

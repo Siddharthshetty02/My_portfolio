@@ -39,9 +39,28 @@ const Hero = () => {
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[80px] leading-[80px] w-full">
           <span className="text-gradient">{aboutMe.name}</span>
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className="font-poppins font-medium text-teal-300 text-[18px] md:text-[20px] mt-2 tracking-wide">
+          {aboutMe.tagLine}
+        </p>
+        <p className={`${styles.paragraph} max-w-[520px] mt-4 text-[16px]`}>
           {aboutMe.intro}
         </p>
+
+        {/* Action CTAs */}
+        <div className="flex flex-wrap gap-4 mt-6">
+          <a
+            href="#projects"
+            className="py-3 px-6 font-poppins font-medium text-[15px] text-primary bg-blue-gradient rounded-[10px] outline-none hover:scale-105 transition-transform shadow-lg shadow-teal-500/20"
+          >
+            Explore Projects
+          </a>
+          <a
+            href="#contactMe"
+            className="py-3 px-6 font-poppins font-medium text-[15px] text-white border border-teal-400/40 hover:border-teal-300 rounded-[10px] outline-none hover:bg-teal-400/10 transition-colors"
+          >
+            Contact Me
+          </a>
+        </div>
       </div>
 
       <div

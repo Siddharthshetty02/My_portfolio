@@ -34,19 +34,20 @@ const Footer = () => (
           ))}
         </div>
 
-        <div className="grid grid-cols-2">
-          {/* styles is a prop */}
-          <a href={resumeLink} target="_blank">
-            <Button
-              styles="mt-10 mr-3 inline-flex items-center justify-center"
-              text="Resume"
-              icon={AiFillFilePdf}
-            />
-          </a>
-          <a href={repoLink} target="_blank">
+        <div className="grid grid-cols-2 gap-2">
+          {resumeLink ? (
+            <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+              <Button
+                styles="mt-10 mr-3 inline-flex items-center justify-center"
+                text="Resume"
+                icon={AiFillFilePdf}
+              />
+            </a>
+          ) : null}
+          <a href={repoLink} target="_blank" rel="noopener noreferrer">
             <Button
               styles="mt-10 inline-flex items-center justify-center"
-              text="Star"
+              text="GitHub"
               icon={AiFillGithub}
             />
           </a>
@@ -56,14 +57,14 @@ const Footer = () => (
       <div className="md:ml-auto mt-10 md:mt-0">
         <img
           src={profilePic}
-          alt="Parth Mittal"
-          className="w-[200px] h-[200px] border-2 border-teal-200 relative z-[5] rounded-full"
+          alt="Siddharth Shetty"
+          className="w-[180px] h-[180px] border-2 border-teal-200 relative z-[5] rounded-full p-1 bg-primary"
         />
       </div>
     </div>
     <div className="text-center font-poppins font-normal text-dimWhite text-xs sm:text-sm pb-4">
       <p>
-        Made with 💙 by Parth Mittal & the Open Source Community
+        © {new Date().getFullYear()} Siddharth Shetty. All rights reserved.
       </p>
     </div>
   </footer>

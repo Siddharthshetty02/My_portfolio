@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ssGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#82E8EB" />
+      <stop offset="50%" stop-color="#00f6ff" />
+      <stop offset="100%" stop-color="#20c997" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Hexagon / Shield outline -->
+  <rect x="15" y="15" width="170" height="170" rx="36" fill="#00040f" stroke="url(#ssGradient)" stroke-width="4" stroke-opacity="0.8" />
+  
+  <!-- Subtle inner background accent -->
+  <rect x="25" y="25" width="150" height="150" rx="28" fill="#11101d" fill-opacity="0.6" />
+
+  <!-- Monogram text SS -->
+  <g font-family="'Poppins', 'Inter', system-ui, sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="central">
+    <text x="75" y="102" font-size="76" fill="url(#ssGradient)" filter="url(#glow)">S</text>
+    <text x="125" y="102" font-size="76" fill="#ffffff">S</text>
+  </g>
+
+  <!-- Code bracket accent dots -->
+  <circle cx="100" cy="155" r="3.5" fill="#82E8EB" />
+</svg>

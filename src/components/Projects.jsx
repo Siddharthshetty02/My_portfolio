@@ -8,9 +8,9 @@ const Project = (props) => {
     <div className="project-card flex-shrink-0 px-8 py-6 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card w-[320px] sm:w-[400px] md:w-[500px] mr-6 sm:mr-8 md:mr-10">
       <div className="flex flex-col items-start">
         <img
-          className="flex-shrink-0 object-cover w-20 h-20 rounded-full ring-4 ring-gray-300"
+          className="flex-shrink-0 object-cover w-20 h-20 rounded-full ring-4 ring-gray-700 bg-primary"
           src={props.image}
-          alt=""
+          alt={props.title}
         />
 
         <div className="mt-4 w-full">
